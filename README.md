@@ -5,7 +5,7 @@ Progetto incompleto (attualmente in sviluppo) di un'applicazione che gestisce ev
 ## Lanciare Server e Client insieme
 
 ```(bash)
-./start.sh (anche per aggiornare la pagina sul browser)
+./start.sh 
 ```
 
 ## Lanciare MongoDB
