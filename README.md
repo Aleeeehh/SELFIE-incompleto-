@@ -1,6 +1,6 @@
 # SELFIE
 
-Progetto incompleto (attualmente in sviluppo) per lo sviluppo di un'applicazione che gestisce eventi, note e sessioni di studio.
+Progetto incompleto (attualmente in sviluppo) di un'applicazione che gestisce eventi, note e sessioni di studio.
 
 ## Lanciare Server e Client insieme
 
