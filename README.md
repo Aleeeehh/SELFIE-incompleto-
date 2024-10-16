@@ -1,25 +1,8 @@
 # SELFIE
 
-Progetto di Tecnologie Web
+Progetto incompleto (attualmente in sviluppo) per lo sviluppo di un'applicazione che gestisce eventi, note e sessioni di studio.
 
-## Lanciare React Client
-
-```(bash)
-cd client
-npm install
-npm run dev
-```
-
-## Lanciare Express Server
-
-```(bash)
-cd server
-npm install
-npm run dev
-```
-
-
-## Lanciare Server e Client insieme, dentro il tuo specifico branch
+## Lanciare Server e Client insieme
 
 ```(bash)
 ./start.sh (anche per aggiornare la pagina sul browser)
@@ -29,8 +12,8 @@ npm run dev
 
 ```(bash)
 brew services start mongodb-community@7.0
-mongod (lancia il databese)
-mongosh (shell mongo)
+mongo
+mongosh 
 ```
 
 ## Visualizzare Eventi creati su MongoDB
@@ -39,12 +22,3 @@ mongosh
 use selfie_db
 db.events.find()
 ```
-
-## Cancellare eventi all'interno di MongoDB
-```(bash)
-db.events.deleteOne({ owner: "Utente-Prova" })
-```
-
-
-Comandi MondoDB: https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/#std-label-install-mdb-community-macos
-
