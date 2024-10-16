@@ -19,7 +19,7 @@ password: 12345678
 
 ```(bash)
 brew services start mongodb-community@7.0
-mongo
+mongod
 mongosh 
 ```
 
