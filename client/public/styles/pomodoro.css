@@ -1,0 +1,163 @@
+.pomodoro-container {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	display: flex;
+	align-items: center;
+	margin: 1em auto;
+	height: calc(100vh-1em);
+	flex-direction: column;
+}
+
+#title {
+	display: flex;
+	flex-direction: column;
+	font-size: 50px;
+	color: black;
+	margin-bottom: 0px;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	font-weight: 900;
+}
+
+.pomodoro img {
+	width: 100%;
+	height: 100%;
+}
+
+.paragraph {
+	margin: 0.5em auto 1em;
+	width: 300px;
+	color: white;
+	text-align: center;
+}
+
+.pomodoro {
+	position: relative;
+	width: 300px;
+	height: 300px;
+	color: white;
+	text-align: center;
+
+}
+
+.timer {
+	font-size: 3em;
+	color: rgb(255, 255, 255);
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 45px;
+	font-weight: 600;
+}
+
+.pannello {
+	display: flex;
+	background-color: bisque;
+	margin: 10px auto;
+	border-radius: 16px;
+}
+
+.pannello label {
+	margin: auto;
+}
+
+.studyTime, .breakTime, .studyCycles {
+	width: 400px;
+	justify-content: space-between;
+}
+
+.pannello input {
+	border-radius: 0px 16px 16px 0px;
+	border: none;
+	padding: 16px;
+	font-size: 15px;
+}
+
+.breakTime {
+	width: 400px;
+	justify-content: space-between;
+}
+
+.studyCycles {
+	width: 400px;
+	justify-content: space-between;
+}
+
+.animate-pomodoro {
+	animation: colorChange linear forwards;
+}
+
+.reverse-animate-pomodoro {
+	animation: reverseColorChange linear forwards;
+}
+
+
+@keyframes colorChange {
+	0% {
+		filter: hue-rotate(0deg);
+	}
+
+	/* Inizio dell'animazione: colore rosso */
+	100% {
+		filter: hue-rotate(60deg);
+	}
+
+	/* Fine dell'animazione: colore verde */
+}
+
+@keyframes reverseColorChange {
+	0% {
+		filter: hue-rotate(60deg);
+	}
+
+	/* Inizio dell'animazione: colore rosso */
+	100% {
+		filter: hue-rotate(0deg);
+	}
+
+	/* Fine dell'animazione: colore verde */
+}
+
+button {
+	width: 150px;
+}
+
+.preview {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+	margin: 50px 0px;
+    color: black;
+}
+
+.previous-pomodoros {
+	margin: 10px;
+	background-color: bisque;
+	border-radius: 16px;
+	width: 150px;
+}
+
+
+
+/*CSS per il form create event*/
+.create-event-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.create-event-container>form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.border {
+	border: 2px solid black;
+}
+
+.createEventinput {
+	background-color: white;
+}
